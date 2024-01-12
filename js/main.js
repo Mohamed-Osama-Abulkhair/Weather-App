@@ -1,5 +1,3 @@
-// ________________
-
 function showCards(cards) {
   $(".owl-carousel").owlCarousel({
     items: cards,
@@ -47,7 +45,7 @@ const weatherCards = document.getElementById("weatherCards");
 async function getWeatherData(q = "cairo") {
   try {
     let response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=015455016670491983f224044241001&q=${q}&days=7`
+      `https://api.weatherapi.com/v1/forecast.json?key=015455016670491983f224044241001&q=${q}&days=7`
     );
 
     let weatherData = await response.json();
