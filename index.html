@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" href="Images/logo.png" sizes="16x16" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container">
+        <a class="navbar-brand d-flex" href="#"
+          ><img src="Images/logo.png" alt="logo" />
+          <div>
+            <p class="logoText">Weather</p>
+            <p class="tagLine">tagline goes here</p>
+          </div></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-light">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-linkHome" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-linkAbout" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-linkServices" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-linkWorks" href="#works">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-linkClients" href="#clients"
+                >Clients</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-linkTeam" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-linkContact" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="position-relative">
+      <div class="bg-img"><img src="Images/banner.png" alt="" /></div>
+      <div class="container pt-5">
+        <div class="row gy-5">
+          <form class="position-relative">
+            <input
+              class="w-100"
+              type="text"
+              id="searchInput"
+              placeholder="Find your location..."
+            />
+            <button id="findBtn" class="position-absolute">Find</button>
+          </form>
+          <div class="owl-carousel owl-theme" id="weatherCards"></div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-md-9">
+            <form class="position-relative">
+              <input
+                class="w-100"
+                type="email"
+                id="email"
+                placeholder="Enter your email to subscribe"
+              />
+              <button id="findBtn" class="position-absolute">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+            <a href="#"> <i class="fa-brands fa-google-plus-g"></i> </a>
+            <a href="#"> <i class="fa-brands fa-pinterest"></i> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

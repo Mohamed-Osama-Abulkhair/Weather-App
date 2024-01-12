@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 1s;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #1e202b;
+}
+
+img {
+  width: 100%;
+}
+
+nav .navbar-brand img {
+  width: fit-content;
+  margin-right: 10px;
+}
+
+nav .navbar-brand p {
+  color: #fff;
+  margin: 0;
+}
+
+nav .navbar-brand .logoText {
+  font-weight: 700;
+}
+nav .navbar-brand .tagLine {
+  font-size: 0.625rem;
+  font-weight: 300;
+  color: #bfc1c8;
+}
+
+nav.navbar-expand-lg .navbar-nav .nav-link.active,
+nav.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #009ad8;
+  border: 2px solid #009ad8;
+}
+
+nav.navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 0.875rem;
+  border: 2px solid transparent;
+  padding: 2px 20px;
+  border-radius: 20px;
+  margin: 0 4px;
+}
+
+.bg-img {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+form {
+  padding: 0 !important;
+  width: calc(100% - var(--bs-gutter-x)) !important;
+  margin: auto;
+}
+
+form input {
+  background: #1e202b;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 120px 15px 20px;
+}
+
+form #findBtn {
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 0 40px;
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(100% - var(--bs-gutter-x));
+  padding: 0;
+  margin: 50px auto;
+  -webkit-box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.75);
+}
+.owl-carousel.owl-loaded .owl-dots {
+  display: none;
+}
+
+.even-card {
+  background-color: #323544;
+}
+
+.odd-card {
+  background-color: #262936;
+}
+
+.day-date-even {
+  background-color: #2d303d;
+}
+
+.day-date-odd {
+  background-color: #222530;
+}
+
+.weather-card .day-date p {
+  margin: 0 !important;
+  color: #bfc1c8;
+  font-size: 0.875rem;
+}
+
+.weather-card .weather-card-body #city {
+  color: #bfc1c8;
+  font-size: 1.125rem;
+}
+
+.weather-card .weather-card-body #degree {
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.weather-card .weather-card-body #cloudText {
+  color: #009ad8;
+  font-weight: 300;
+}
+.weather-card .weather-card-body footer p {
+  color: #bfc1c8;
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+/* _________________ */
+
+section {
+  background-color: #323544;
+  padding: 5% 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+section .col-md-3 {
+  text-align: end;
+}
+
+section i {
+  color: #009ad8;
+  background-color: #1e202b;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+section i:hover {
+  background-color: #009ad8;
+  color: #fff;
+}
+
+/* _________________ */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3;
+}
+.scrollbar {
+  scrollbar-color: #007bff #f1f1f1;
+}
+
+/* ______________________________________ */
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    border: none;
+    color: #fff;
+  }
+
+  nav.navbar-expand-lg .navbar-nav .nav-link.active,
+  nav.navbar-expand-lg .navbar-nav .nav-link:hover {
+    border: 2px solid transparent;
+    border-bottom: 1px solid #404040;
+  }
+
+  nav.navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    border-bottom: 1px solid #404040;
+    border-radius: 0;
+    padding: 20px;
+  }
+
+  section .col-md-3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  form #findBtn {
+    position: static !important;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 40px;
+  }
+}
